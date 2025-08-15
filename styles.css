@@ -1,0 +1,65 @@
+.selected {
+    text-decoration: underline;
+}
+.bg-logo {
+    background-color: #004482;
+}
+.bg-logo-pink {
+    background-color: #df3c98;
+}
+.text-logo {
+    color: #004482 !important;
+}
+.text-logo-pink {
+    color: #df3c98;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.arcos {
+    background-image: url("./images/arcos_lele.png");
+    background-repeat: repeat;
+    background-size: 40%;
+}
+
+.frame-pdf {
+    height: 90vh;
+}
+
+.consent {
+    background-color: #505c61;
+    color: white;
+    height: 20vh;
+    /* position:fixed;
+    bottom: 0; */
+}
+
+.consent-content {
+    height: 80%;
+    overflow: scroll;
+}
+
+.consent-content > p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1000px) {
+    #vanish {
+        display: none;
+    }
+    #AAA {
+        margin-top: 1rem;
+        top: -10rem;
+        position: static !important;
+    }
+    .sm-90 {
+        max-width: 90vw;  
+    }
+  } 
