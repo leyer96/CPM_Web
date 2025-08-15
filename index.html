@@ -34,17 +34,20 @@
         </div>
       </nav>
     <!-- SECTION: MAIN -->
-    <div class="my-3 mx-3 d-inline-block p-2" id="inicio">
-        <h1 class="display-4 p-4">Congreso Estatal de Pediatría 2025</h1>
+    <div class="my-3 mx-3 d-inline-flex align-items-center" id="inicio">
+        <h1 class="display-4">Congreso Estatal de Pediatría 2025</h1>
+        <a href="./documents/programa.pdf" target="_blank">
+          <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">PROGRAMA</button>
+        </a>
     </div>
     <div class="container-fluid">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="container text-center col-md-6 col-sm-12">
           <div class="col-md-8 col-sm-12 mx-auto">
             <a href="images/cartel.png"><img id="poster" class="img-fluid" src="images/cartel.png"></a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 text-center mx-auto mb-5">
+        <div class="col-md-4 col-sm-12 text-center mx-auto mt-5">
           <p class="display-6">Costos</p>
           <table class="table" style="border: 1px black solid;">
             <thead>
@@ -273,10 +276,8 @@
      <div class="my-3 mx-3 d-block p-2" id="talleres">
         <h1 class="w-auto display-4">Programa</h1>
     </div>
-    <div class="container">
-      <div class="ratio ratio-16x9">
-        <embed src="documents/programa.pdf" type="application/pdf">
-      </div>
+    <div class="container-fluid p-0">
+        <iframe src="documents/programa.pdf" style="width: 100%; height: 100vh; border: none;"></iframe>
     </div>
 
 </body>
