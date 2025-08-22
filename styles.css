@@ -1,3 +1,18 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.vertical-text {
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.roboto {
+   font-family: 'Roboto Condensed', sans-serif; 
+}
 .selected {
     text-decoration: underline;
 }
@@ -5,7 +20,15 @@
     background-color: #004482;
 }
 .bg-logo-pink {
-    background-color: #df3c98;
+    background-color: #df3c98 !important;
+}
+.bg-blue {
+    background-color: #1f2e6a !important;
+    color: white !important;
+}
+.bg-purple {
+    background-color: #5d5fac !important;
+    color: white !important;
 }
 .text-logo {
     color: #004482 !important;
@@ -21,34 +44,10 @@
 .text-justify {
     text-align: justify;
 }
-.arcos {
-    background-image: url("./images/arcos_lele.png");
-    background-repeat: repeat;
-    background-size: 40%;
-}
 
 .frame-pdf {
     height: 90vh;
 }
-
-.consent {
-    background-color: #505c61;
-    color: white;
-    height: 20vh;
-    /* position:fixed;
-    bottom: 0; */
-}
-
-.consent-content {
-    height: 80%;
-    overflow: scroll;
-}
-
-.consent-content > p {
-    width: 95%;
-    margin: 0 auto;
-}
-
 
 @media (max-width: 1000px) {
     #vanish {
