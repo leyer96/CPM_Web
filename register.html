@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg border-bottom sticky-top bg-logo-pink montserrat">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="Bootstrap" width="60" height="48">
+                <img src="./images/logo_2.png" alt="Bootstrap" width="60" height="48">
               </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -29,18 +29,24 @@
                   <a class="nav-link fw-bold text-white" href="./index.html#programa">Programa Académico</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html">Registro</a>
+                  <a class="nav-link fw-bold text-white" href="./register.html">Registro Congreso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold text-white" href="./register.html#registro-talleres">Registro Taller</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold text-white" href="./register.html#datos-bancarios">Transferencia</a>
                 </li>
               </ul>
             </div>
         </div>
       </nav>
-      <!-- INFORMACIÓN PARA TRANSFERENCIAS -->
+
        <div class="container-fluid">
         <!-- TÍTULO -->
         <div class="row d-flex align-items-center my-3">
             <h2 class="montserrat display-6 mt-3 w-auto">Registro a Congreso</h2>
-            <a class="w-auto" href="#" target="_blank">
+            <a class="w-auto" href="https://forms.gle/J16ghU8hTRWYKGN58" target="_blank">
                 <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
                     <span class="montserrat fw-bold">EMPEZAR REGISTRO</span>
                 </button>
@@ -48,30 +54,102 @@
         </div>
         <!-- INDICACIONES REGISTRO -->
         <div class="row">
-            <p class="display-7">Por favor completa el <a href="https://forms.gle/J16ghU8hTRWYKGN58">siguiente formulario</a> para registrarte. En el formulario podrás seleccionar tu forma de pago (transferencia, link de pago o pago en congreso). Si cuentas con beca de inscripción al congreso, proporciona la información correspondiente en la sección indicada.</p>
+          <div class="col-12">
+            <ol>
+              <li><p class="display-7">Haz clic en el botón "EMPEZAR REGISTRO" para acceder al formulario de registro. Si cuentas con beca de inscripción al congreso, proporciona la información correspondiente en la sección indicada.</p></li>
+              <li><p>Después de tu registro, realiza tu pago de la forma que prefieras (transferencia o link de pago). Tu boleto te llegará al correo electrónico proporcionado <span class="fw-bold">unos días antes</span> del congreso o taller.</p></li>
+            </ol>
             <p class="display-7"><span class="fw-bold">¡IMPORTANTE!</span> En caso de realizar tu pago por medio de transferencia, es necesario que revises los <a href="./index.html#costos">costos por categoría</a>. Una vez realizado tu pago, <span class="fw-bold">no olvides</span> enviar tu comprobante al correo de contacto (colegiopediamor@hotmail.com).</p>
+            <p class="display-7"><span class="fw-bold">CONGRESO VIRTUAL</span> Realiza tu inscripción en el <a href="#" target="_blank">siguiente formulario</a></p>
+          </div>
         </div>
+        <!-- TABLA CON LINKS DE PAGO -->
+         <div clas="container-fluid">
+            <div class="col-md-6 col-sm-12 text-center mx-auto mt-5">
+              <h2 class="display-6 montserrat fw-bold">Links de Pago</h2>
+              <table class="table" style="border: 1px black solid;" id="costos">
+                <thead>
+                  <tr>
+                    <th class="bg-logo-pink text-white" scope="col">Categoría</th>
+                    <th class="bg-logo-pink text-white" scope="col">Link de Pago</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Médico Pediatra</td>
+                    <td>
+                      <a href="https://buy.stripe.com/test_eVq9AMbkCbOE0BYe144F208" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
+                          IR A PAGO
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Médico General</td>
+                    <td>
+                      <a href="https://buy.stripe.com/test_dRm00c74m8CsgAW5uy4F20b" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
+                          IR A PAGO
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Enfermeros / Residentes</td>
+                    <td>
+                      <a href="https://buy.stripe.com/test_dRm6oA1K28Cs84q6yC4F209" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
+                          IR A PAGO
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Estudiantes</td>
+                    <td>
+                      <a href="https://buy.stripe.com/test_dRm6oA1K28Cs84q6yC4F209" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
+                          IR A PAGO
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Virtual</td>
+                    <td>
+                      <a href="https://buy.stripe.com/test_3cI00c0FY7yo3Oa9KO4F20a" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg d-inline-block mx-3" style="background-color: #df3c98 !important; border-color: #df3c98 !important">
+                          IR A PAGO
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
         <!-- REGISTRO A TAllER -->
-        <div class="row">
+        <div class="row" id="registro-talleres">
             <h2 class="montserrat display-6 mt-3">Registro a taller <span class="display-7 mt-3"> - ¡Únicamente pago en línea!</span></h2>
             <div class="bg-logo-pink text-white p-3 fw-bold">
                 PROMOCIÓN: INSCRIPCIÓN AL TALLER PEARS INCLUYE ACCESO AL CONGRESO (SOLO Médicos Generales, Enfermeras, Residentes y Estudiantes)
             </div>
             <p class="display-7 fw-bold">Requieren pago:</p>
             <ul class="mx-3">
-                <li>PEARS: <a href="https://buy.stripe.com/test_4gM9AM4WedWM84q7CG4F207" target="_blank">https://buy.stripe.com/test_4gM9AM4WedWM84q7CG4F207</a></li>
-                <li class="my-3">Toxicología: <a href="https://buy.stripe.com/test_bJeaEQ2O67yo5Wig9c4F205" target="_blank">https://buy.stripe.com/test_bJeaEQ2O67yo5Wig9c4F205</a></li>
-                <li class="my-3">Primeros Auxilios: <a href="https://buy.stripe.com/test_fZu8wI1K25qgfwScX04F206" target="_blank">https://buy.stripe.com/test_fZu8wI1K25qgfwScX04F206</a></li>
+                <li>PEARS: <a href="https://buy.stripe.com/test_4gM9AM4WedWM84q7CG4F207" target="_blank">clic aquí</a></li>
+                <li class="my-3">Toxicología: <a href="https://buy.stripe.com/test_bJeaEQ2O67yo5Wig9c4F205" target="_blank">clic aquí</a></li>
+                <li class="my-3">Primeros Auxilios: <a href="https://buy.stripe.com/test_fZu8wI1K25qgfwScX04F206" target="_blank">clic aquí</a></li>
             </ul>
             <p class="display-7 fw-bold">Inscripción gratuita:</p>
             <ul class="mx-3">
-                <li>ALIMENTACIÓN COMLEMENTARIA: <a href="https://forms.gle/7zSqA1igSi6CTN6s5" target="_blank">https://forms.gle/7zSqA1igSi6CTN6s5</a></li>
-                <li class="my-3">DISCIPLINA POSITIVA (8:30 AM): <a href="https://forms.gle/pCzeZKsSScmDAv9H8" target="_blank">https://forms.gle/pCzeZKsSScmDAv9H8</a></li>
-                <li class="my-3">DISCIPLINA POSITIVA (3:00 PM): <a href="https://forms.gle/A8JJ1bJBy4WiMk9BA" target="_blank">https://forms.gle/A8JJ1bJBy4WiMk9BA</a></li>
+                <li>ALIMENTACIÓN COMLEMENTARIA: <a href="https://forms.gle/7zSqA1igSi6CTN6s5" target="_blank">clic aquí</a></li>
+                <li class="my-3">DISCIPLINA POSITIVA (8:30 AM): <a href="https://forms.gle/pCzeZKsSScmDAv9H8" target="_blank">clic aquí</a></li>
+                <li class="my-3">DISCIPLINA POSITIVA (3:00 PM): <a href="https://forms.gle/A8JJ1bJBy4WiMk9BA" target="_blank">clic aquí</a></li>
             </ul>
         </div> 
         <!-- DATOS BANCARIOS -->
-        <div class="row d-flex justify-content-start">
+        <div class="row d-flex justify-content-start" id="datos-bancarios">
             <div class="bg-blue col-sm-12 col-lg-6 mx-auto my-3 rounded p-4">
                 <h2 class="montserrat display-6 mt-3">DATOS BANCARIOS</h2>
                 <p class="fw-bold">Nombre</p>
