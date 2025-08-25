@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
+
 .vertical-text {
     writing-mode: tb-rl;
     transform: rotate(180deg);
