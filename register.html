@@ -21,21 +21,23 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end text-white" id="navbarSupportedContent">
-              <ul class="navbar-nav text-white"> 
+              <ul class="navbar-nav me-auto text-white"> 
                 <li class="nav-item">
                   <a class="nav-link fw-bold text-white" href="./index.html#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fw-bold text-white" href="./index.html#programa">Programa Académico</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#">Registro Congreso</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#registro-talleres">Registro Taller</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#datos-bancarios">Transferencia</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Registro
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./register.html#">Congreso</a></li>
+                        <li><a class="dropdown-item" href="./register.html#registro-talleres">Taller</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./register.html#datos-bancarios">Transferencia</a></li>
+                    </ul>
                 </li>
               </ul>
             </div>
