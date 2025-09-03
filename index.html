@@ -21,21 +21,23 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end text-white" id="navbarSupportedContent">
-              <ul class="navbar-nav text-white"> 
+              <ul class="navbar-nav me-auto text-white"> 
                 <li class="nav-item">
                   <a class="nav-link fw-bold text-white" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fw-bold text-white" href="#programa">Programa Académico</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#">Registro Congreso</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#registro-talleres">Registro Taller</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold text-white" href="./register.html#datos-bancarios">Transferencia</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Registro
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./register.html#">Congreso</a></li>
+                        <li><a class="dropdown-item" href="./register.html#registro-talleres">Taller</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./register.html#datos-bancarios">Transferencia</a></li>
+                    </ul>
                 </li>
               </ul>
             </div>
@@ -60,7 +62,7 @@
         <!-- PÓSTER -->
         <div class="container text-center col-12">
           <div class="col-12 mx-auto">
-            <a href="images/cartel.jpg" target="_blank"><img id="poster" class="img-fluid" src="images/cartel.jpg"></a>
+            <a href="images/cartel_firmado.png" target="_blank"><img id="poster" class="img-fluid" src="images/cartel_firmado.png"></a>
           </div>
         </div>
         <!-- PALABRAS PRESDIENTA -->
@@ -154,7 +156,11 @@
                 <p class="montserrat" style="font-size: 3rem; line-height: 2.5rem; color:gray;">2</p>
             </div>
             <div class="col-sm-10 col-lg-8">
-                <div class="bg-logo-pink p-1 mb-2" style="color:white;"><span class="mx-2 fw-bold">Talleres</span></div>
+                <div class="bg-logo-pink p-1" style="color:white;"><span class="mx-2 fw-bold">Talleres</span></div>
+                <div class="d-flex align-items-center" style="margin: 0;" >
+                    <img style="width: 2rem;" src="images/location_icon.png">
+                    <p style="font-size: 1rem; margin: 0;">Centro Universitario "Los Belenes": Calle Coronel Ahumada No 413 Col. Los Volcanes.</p>
+                </div>
                 <table class="table table-bordered border-4 border-dark" style="font-size: 0.75rem;">
                     <!-- PRIMER HORARIO DE TALLERES -->
                     <tr style="font-size: 1rem;">
@@ -313,7 +319,11 @@
                 <p class="montserrat" style="font-size: 3rem; line-height: 2.5rem; color:gray;">3</p>
             </div>
             <div class="col-sm-10 col-lg-8">
-                <div class="bg-logo-pink p-1 mb-2" style="color:white;"><span class="mx-2 fw-bold">Ponencias</span></div>
+                <div class="bg-logo-pink p-1" style="color:white;"><span class="mx-2 fw-bold">Ponencias</span></div>
+                <div class="d-flex align-items-center" style="margin: 0;" >
+                    <img style="width: 2rem;" src="images/location_icon.png">
+                    <p style="font-size: 1rem; margin: 0;">Hotel Holiday Inn Acapantzingo</p>
+                </div>
                 <table class="table table-bordered border-4 border-dark" style="font-size: 0.75rem;">
                     <!-- PRIMER DÍA CONGRESO -->
                     <tr style="font-size: 1rem;">
@@ -439,7 +449,11 @@
                 <p class="montserrat" style="font-size: 3rem; line-height: 2.5rem; color:gray;">4</p>
             </div>
             <div class="col-sm-10 col-lg-8">
-                <div class="bg-logo-pink p-1 mb-2" style="color:white;"><span class="mx-2 fw-bold">Ponencias</span></div>
+                <div class="bg-logo-pink p-1" style="color:white;"><span class="mx-2 fw-bold">Ponencias</span></div>
+                <div class="d-flex align-items-center" style="margin: 0;" >
+                    <img style="width: 2rem;" src="images/location_icon.png">
+                    <p style="font-size: 1rem; margin: 0;">Hotel Holiday Inn Acapantzingo</p>
+                </div>
                 <table class="table table-bordered border-4 border-dark" style="font-size: 0.75rem;">
                     <!-- SEGUNDO DÍA CONGRESO -->
                     <tr style="font-size: 1rem;">
@@ -562,7 +576,12 @@
                     </tr>
                 </table>
             </div>
-
+        </div>
+        <div class="row">
+            <div class="d-inline-block w-auto">
+                <h2 class="display-6 montserrat fw-bold my-4 w-auto">PATROCINADORES</h2>
+            </div>
+            <img class="img-fluid" src="images/patrocinadores.jpg">
         </div>
     </div>
 </body>
