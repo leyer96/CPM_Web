@@ -2,6 +2,19 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.collapse-icon {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+/* When collapsed (hidden), reset rotation */
+.collapsed.collapse-icon {
+    transform: rotate(0deg);
+}
+/* When expanded (shown), rotate 180° */
+.collapse-icon:not(.collapsed) {
+    transform: rotate(180deg);
+}
+
 .vertical-text {
     writing-mode: tb-rl;
     transform: rotate(180deg);
