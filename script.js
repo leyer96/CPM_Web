@@ -1,5 +1,5 @@
 if (window.location.href.includes("register.html")) {
-    alert("PROMOCIÓN: INSCRIPCIÓN A TALLER PEARS INCLUYE ACCESO A CONGRESO (SOLO Médicos Generales, Enfermeras, Residentes y Estudiantes)")
+    alert("PROMOCIONES:\n\nINSCRIPCIÓN A TALLER PEARS INCLUYE ACCESO A CONGRESO (SOLO Médicos Generales, Enfermeras, Residentes y Estudiantes) \n\nTALLER DE TOXICOLOGÍA: 50% DE DESCUENTO")
 }
 
 document.getElementById("closeAd").addEventListener("click", function() {
