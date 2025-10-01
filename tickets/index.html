@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Viewer</title>
+</head>
+<body>
+  <div id="message">Loading ticket...</div>
+  <script>
+    // Get the ticket ID from the URL path
+    const path = window.location.pathname; // e.g. /tickets/ABC
+    const parts = path.split('/');
+    const ticketId = parts[2]; // "ABC"
+
+    if(ticketId) {
+      // Build the PDF filename
+      const pdfUrl = ticketId + '.pdf';
+
+      // Option 1: Redirect to the PDF file
+      window.location.href = pdfUrl;
+
+      // Option 2: Embed PDF (uncomment if you want embed instead of redirect)
+      /*
+      document.body.innerHTML = `<embed src="${pdfUrl}" type="application/pdf" width="100%" height="100vh" />`;
+      */
+    } else {
+      document.getElementById('message').innerText = "No ticket specified.";
+    }
+  </script>
+</body>
+</html>
