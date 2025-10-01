@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirecting...</title>
+  <title>Validador de ticket</title>
   <meta charset="UTF-8" />
 </head>
 <body>
-  <p>VALIDADOR DE TICKET</p>
+  <p id="p">VALIDADOR DE TICKET</p>
   <script>
     const tickets =[
         "F9E420C8.pdf",
@@ -300,8 +300,10 @@
       const ticketName = `${ticketId}.pdf`;
       if(tickets.includes(ticketName)){
         alert("TICKET VÁLIDO")
+        document.getElementById("p").innerText = "TICKET VÁLIDO"
       } else {
         alert("TICKET INVÁLIDO")
+        document.getElementById("p").innerText = "TICKET INVÁLIDO"
       }
 
       // Redirect to the actual PDF
