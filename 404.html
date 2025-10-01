@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <p>Redirecting to your ticket...</p>
+  <script>
+    // Get current path
+    const path = window.location.pathname;
+
+    // Check if path matches the /tickets/{id} pattern
+    const match = path.match(/^\/tickets\/([a-zA-Z0-9_-]+)$/);
+
+    if (match) {
+      const ticketId = match[1];
+      const newUrl = `/tickets/${ticketId}.pdf`;
+
+      // Redirect to the actual PDF
+      window.location.replace(newUrl);
+    } else {
+      // Otherwise show a generic 404 message
+      document.body.innerHTML = "<h1>Page not found</h1><p>The ticket you're looking for doesn't exist.</p>";
+    }
+  </script>
+</body>
+</html>
