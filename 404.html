@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
 </head>
 <body>
-  <p>Redirecting to your ticket...</p>
+  <p>VALIDADOR DE TICKET</p>
   <script>
     const tickets =[
         "F9E420C8.pdf",
@@ -297,7 +297,8 @@
     if (match) {
       const ticketId = match[1];
       const newUrl = `/tickets/${ticketId}.pdf`;
-      if(tickets.includes(newUrl)){
+      const ticketName = `${ticketId}.pdf`;
+      if(tickets.includes(ticketName)){
         alert("TICKET VÁLIDO")
       } else {
         alert("TICKET INVÁLIDO")
